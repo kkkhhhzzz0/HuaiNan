@@ -1,0 +1,139 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 设置文档字符编码为UTF-8 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- 设置网页标题 -->
+    <title>联系我们 - 淮南</title>
+    <!-- 引入外部CSS样式表 -->
+    <link rel="stylesheet" href="./layout.css">
+    <style>
+        /* 如果有特定样式需求，可以在这里添加 */
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- 整个页面布局的容器 -->
+    <div class="lay">
+        <!-- 页面顶部导航栏 -->
+        <div class="top">
+            <!-- 网站logo -->
+            <img src="./images/logo.png" alt="" width="160px" height="50px" style="margin-left: 20px;margin-top: 5px;">
+            <!-- 导航链接 -->
+            <div class="webnav">
+                <ul>
+                    <li><a href="index.html" title="网站首页">Homepage</a></li>
+                    <li><a href="hnws.html" title="淮南五色">Five color of HuaiNan</a></li>
+                    <li><a href="jdxc.html" title="景点小吃">signature dishes</a></li>
+                    <li><a href="lygl.html" title="旅游攻略">Travel guide</a></li>
+                    <li><a href="about.html" title="关于我们">About Us</a></li>
+                    <li class="licur"><a href="contact.html" title="联系我们">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- 清除浮动 -->
+            <div style="clear:both"></div>
+        </div>
+        <!-- 主体内容区域 -->
+        <div class="index_con">
+            <div class="left">
+                <div class="jsbox">
+                    <h3 class="s1"><span class="s1">联系我们</span></h3>
+                    <div class="js_con">
+                        <form class="form-container" action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">姓名:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">电子邮件:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">消息:</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <input type="submit" value="提交">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 页脚信息 -->
+        <div class="footer">
+            <p style="text-align: center;height: 20px;background-color: black;color: white">Copyright &#169; i like HuaiNan culture</p>
+        </div>
+    </div>
+    <script src="./highlight.js"></script>
+    <script src="./backToTopButton.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // 表单验证
+            const form = document.querySelector('.form-container');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // 阻止表单默认提交行为
+
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
+
+                if (name === '') {
+                    alert('姓名不能为空');
+                    return;
+                }
+
+                if (email === '' || !validateEmail(email)) {
+                    alert('请输入有效的电子邮件地址');
+                    return;
+                }
+
+                if (message === '') {
+                    alert('消息不能为空');
+                    return;
+                }
+
+                // 如果验证通过，可以提交表单
+                alert('表单提交成功！');
+                form.reset(); // 清空表单
+            });
+
+            function validateEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+        });
+    </script>
+</body>
+</html>

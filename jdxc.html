@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Signature dishes</title>
+		<link rel="stylesheet" href="./layout.css">
+		<style>
+		   
+     
+	 .container {
+		 display: flex;
+		 flex-direction: column;
+		 width: 100%;
+		 max-width: 1000px; /* 最大宽度 */
+		 margin: 0 auto; /* 居中对齐 */
+		 border: 3px solid #cccccc;
+		 padding: 20px;
+		 box-sizing: border-box;
+	 }
+
+	 .item {
+		 display: flex;
+		 align-items: center;
+		 justify-content: space-between;
+		 padding: 20px;
+		 box-sizing: border-box;
+		 border-bottom: 2px solid #cccccc;
+	 }
+
+	 .image {
+		 width: 180px;
+		 height: 150px;
+		 object-fit: cover; /* 保持图片比例 */
+	 }
+
+	 .text {
+		 font-family: "SimSun";
+		 font-size: 16px;
+		 line-height: 25px;
+		 letter-spacing: 2px;
+		 margin-left: 20px;
+	 }
+
+	 .banner img {
+		 width: 100%;
+		 height: auto;
+		 max-height: 460px; /* 最大高度 */
+		 object-fit: cover; /* 保持图片比例 */
+	 }
+
+	 /* 平板设备 */
+	 @media (max-width: 768px) {
+		 .image {
+			 width: 100%;
+			 height: auto;
+		 }
+
+		 .text {
+			 font-size: 14px;
+			 line-height: 22px;
+			 margin-left: 10px;
+		 }
+	 }
+
+	 /* 移动设备 */
+	 @media (max-width: 480px) {
+		 .container {
+			 padding: 10px;
+		 }
+
+		 .item {
+			 flex-direction: column;
+			 align-items: flex-start;
+		 }
+
+		 .image {
+			 width: 100%;
+			 height: auto;
+		 }
+
+		 .text {
+			 font-size: 12px;
+			 line-height: 18px;
+			 margin-left: 0;
+			 margin-top: 10px;
+		 }
+	 }
+ </style>
+		
+	</head>
+	<body>
+		<div class="lay">
+			<div class="top"><img src="./images/logo.png" alt="" width="160px" height="50px" style="margin-left: 20px;margin-top: 5px;">
+				<div class="webnav">
+					<ul>
+						<li class="licur"><a href="index.html" title="网站首页">Homepage</a></li>
+                        <!-- 景点列表链接 -->
+                        <li><a href="hnws.html" title="淮南五色">Five color of HuaiNan</a></li>
+                        <!-- 景点小吃链接 -->
+                        <li><a href="jdxc.html" title="特色美食">signature dishes</a></li>
+                        <!-- 旅游攻略链接 -->
+                        <li><a href="lygl.html" title="旅游攻略">Travel guide</a></li>
+					</ul>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+			<div class="banner">
+				<img src="images/doufuyan.jpg" height="329" width="1000" />
+			</div>
+			<table>
+			  <tr>
+			    <td>
+			      <img src="./images/niuroutang.jpg" alt="图片描述1">
+			      <p>Beef soup </p>
+			    </td>
+			    <td>
+			      <img src="./images/shaokao.jpg" alt="图片描述1">
+			      <p>barbecue</p>
+			    </td>
+			   <td>
+			     <img src="./images/tudoupian.jpg" alt="图片描述1">
+			     <p>Potato chips</p>
+			   </td>
+			  </tr>
+			  
+			  <tr>
+			    <td>
+			      <img src="./images/satang.jpg" alt="图片描述1">
+			      <p>Hot chicken soup with raw eggs</p>
+			    </td>
+			    <td>
+			      <img src="./images/chouguiyu.jpg" alt="图片描述1">
+			      <p>Smelly Mandarin fish</p>
+			    </td>
+			   <td>
+			     <img src="./images/dajiujia.jpg" alt="图片描述1">
+			     <p>The great rescue</p>
+			   </td>
+			  </tr>
+			  
+			  <tr>
+			    <td>
+			      <img src="./images/bingjiuniang.jpg" alt="图片描述1">
+			      <p>Jiuniang</p>
+			    </td>
+			    <td>
+			      <img src="./images/come wonka.jpg" alt="图片描述1">
+			      <p>come wonka</p>
+			    </td>
+			   <td>
+			     <img src="./images/yiyiniunai.jpg" alt="图片描述1">
+			     <p>Yiyi milk</p>
+			   </td>
+			  </tr>
+			</table>
+		</div>
+		<script src="./highlight.js"></script>
+		<script src="./backToTopButton.js"></script>
+	</body>
+</html>

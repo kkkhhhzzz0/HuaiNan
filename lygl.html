@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>旅游攻略</title>
+		<link rel="stylesheet" href="./layout.css">
+	</head>
+	<style>
+     
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1000px; /* 最大宽度 */
+            margin: 0 auto; /* 居中对齐 */
+            border: 3px solid #cccccc;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            box-sizing: border-box;
+            border-bottom: 2px solid #cccccc;
+        }
+
+        .image {
+            width: 180px;
+            height: 150px;
+            object-fit: cover; /* 保持图片比例 */
+        }
+
+        .text {
+            font-family: "SimSun";
+            font-size: 16px;
+            line-height: 25px;
+            letter-spacing: 2px;
+            margin-left: 20px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            max-height: 460px; /* 最大高度 */
+            object-fit: cover; /* 保持图片比例 */
+        }
+
+        /* 平板设备 */
+        @media (max-width: 768px) {
+            .image {
+                width: 100%;
+                height: auto;
+            }
+
+            .text {
+                font-size: 14px;
+                line-height: 22px;
+                margin-left: 10px;
+            }
+        }
+
+        /* 移动设备 */
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            .item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .image {
+                width: 100%;
+                height: auto;
+            }
+
+            .text {
+                font-size: 12px;
+                line-height: 18px;
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+	<body>
+		<div class="lay">
+			<div class="top"><img src="./images/logo.png" alt="" width="160px" height="50px"
+					style="margin-left: 20px;margin-top: 5px;">
+				<div class="webnav">
+					<ul>
+						<li class="licur"><a href="index.html" title="网站首页">Homepage</a></li>
+                        <!-- 景点列表链接 -->
+                        <li><a href="hnws.html" title="淮南五色">Five color of HuaiNan</a></li>
+                        <!-- 景点小吃链接 -->
+                        <li><a href="jdxc.html" title="特色美食">signature dishes</a></li>
+                        <!-- 旅游攻略链接 -->
+                        <li><a href="lygl.html" title="旅游攻略">Travel guide</a></li>
+					</ul>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+			<div class="banner">
+				<img src="./images/bagongshan.jpg" />
+			</div>
+			<div class="container">
+				<p>Eight Public Parks (八公山)
+					Located on the outskirts of the city, Eight Public Parks is a scenic mountain range known for its lush forests, ancient temples, and stunning views. The area is steeped in history, with stories dating back to the Spring and Autumn Period. Don't miss the opportunity to hike through the mountains and explore the many historical sites scattered throughout.
+					Mengcheng Ancient City (蒙城古街)
+					This well-preserved ancient town offers a glimpse into Huainan's rich cultural heritage. Wander through the narrow streets lined with traditional architecture, visit the ancient city walls, and explore the local markets where you can find unique handicrafts and souvenirs.
+					</p>
+			</div>
+			<div class="banner">
+				<img src="./images/meishi.jpg" />
+			</div>
+			<div class="container1">
+				<p>Huainan Beef Soup (淮南牛肉汤): One of Huainan’s most famous dishes, this hearty beef soup is a local favorite. Made with tender slices of beef, fresh vegetables, and a rich, flavorful broth, it is often spiced with Sichuan peppercorns and chili oil for an extra kick. The soup is typically enjoyed with flat noodles or steamed buns, making it a comforting and satisfying meal.
+					Eight Public Parks Tofu (八公山豆腐): Made from locally sourced soybeans, this tofu is known for its soft texture and delicate flavor. It's often served in a variety of dishes, including hot pots and stir-fries.
+					Fried Dough Twist (油条): A popular breakfast dish in Huainan, fried dough twists are crispy and golden, often served with soy milk or congee.
+					Huai River Fish (淮河鱼): Fresh fish from the nearby Huai River is a local delicacy, typically prepared in a variety of ways, such as steamed, fried, or braised.</p>
+			</div>
+		</div>
+		<script src="./highlight.js"></script>
+		<script src="./backToTopButton.js"></script>
+	</body>
+</html>

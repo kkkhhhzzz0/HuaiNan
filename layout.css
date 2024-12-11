@@ -1,0 +1,340 @@
+/* Reset margin and padding for common elements */
+body, p, form, h1, h2, h3, h4, h5, h6, td, th, table, div, ul, li, ol, dl, dt, dd, input, select {
+    margin: 0;
+    padding: 0;
+}
+
+/* General body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background: #f8f8f8;
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    color: #585858;
+}
+
+a:hover {
+    color: #0766A6;
+}
+
+/* Border utility class */
+.border01 {
+    border: 1px solid #E3E3E3;
+}
+
+/* Image styling */
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+/* List styling */
+ul, ul li {
+    list-style-type: none;
+}
+
+/* Clearfix */
+.clear {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    font-size: 0;
+}
+
+/* Blank space */
+.blank10 {
+    height: 10px;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    clear: both;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+/* Website header */
+.top {
+    width: 1002px;
+    margin: 0 auto;
+    border-bottom: 2px solid #006699;
+    background: #EAEAEA;
+}
+
+.logo {
+    float: left;
+    width: 350px;
+    height: 60px;
+    overflow: hidden;
+    display: inline;
+}
+
+.righttel {
+    float: right;
+    width: 200px;
+    height: 30px;
+    overflow: hidden;
+    margin-right: 40px;
+    margin-top: 10px;
+    display: inline;
+}
+
+.webnav {
+    float: right;
+    text-align: right;
+    height: 60px;
+    line-height: 60px;
+    overflow: hidden;
+}
+
+.webnav ul {
+    padding-right: 20px;
+}
+
+.webnav li {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    font-family: '微软雅黑', Arial;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.webnav li a {
+    display: block;
+    color: #0766A6;
+}
+
+.webnav li:hover {
+    background: #0E7CB0;
+    color: #FFFFFF;
+}
+
+.webnav li a:hover {
+    color: #FFFFFF;
+}
+
+/* Banner */
+.banner {
+    width: 1002px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.banner img {
+    width: 1000px;
+    height: 400px;
+}
+
+/* Main content of the homepage */
+.index_con {
+    width: 1002px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.jsbox {
+    width: 660px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+
+h3.s1 {
+    height: 30px;
+    padding-left: 20px;
+    background: #526B37;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.js_con {
+    padding: 20px 10px;
+    text-indent: 2em;
+    background: #EBE7D7;
+    font-family: "SimSun";
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.index_con .left {
+    float: left;
+    width: 660px;
+}
+
+.index_con .right {
+    float: right;
+    width: 330px;
+}
+
+span.s1 {
+    display: block;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    padding: 0 6px;
+    background: #E7E2CE;
+    color: #323126;
+}
+
+.lb_box {
+    width: 330px;
+}
+
+.lb_con {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background: #EBE7D7;
+}
+
+.lb_con img {
+    width: 300px;
+    height: 258px;
+    padding: 10px 0;
+}
+
+h3.s2 {
+    height: 25px;
+    padding: 5px 0 0 20px;
+    background: #D5C794;
+    font-size: 14px;
+    font-weight: 900;
+    border-bottom: 2px solid #526B37;
+}
+
+span.s2 {
+    display: block;
+    width: 120px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    padding: 0 6px;
+    background: #526B37;
+    color: #FFFFFF;
+    border-radius: 5px 5px 0 0;
+}
+
+.pic_box {
+    width: 660px;
+    background: #EBE7D7;
+    border: 1px solid #CCCCCC;
+    margin-top: 20px;
+    float: left;
+}
+
+.pic_con img {
+    float: left;
+    margin: 5px 0 10px 25px;
+}
+
+.pic_con {
+    padding: 10px;
+    background: #EBE7D7;
+}
+
+#yj img {
+    max-width: 638px;
+    display: block;
+    margin: 0 auto;
+}
+
+.s3 {
+    background-color: white;
+    padding-left: 25px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.lay {
+    width: 1000px;
+    background-color: #fafafa;
+}
+#backToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* 初始状态下隐藏按钮 */
+    transition: background-color 0.3s; /* 平滑过渡效果 */
+}
+
+/* layout.css */
+
+#backToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 30px; /* 增加内边距 */
+    background-color: #007bff; /* 蓝色背景 */
+    color: #fff; /* 白色文字 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* 初始状态下隐藏按钮 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    font-size: 16px; /* 增大字体 */
+    font-weight: bold; /* 加粗字体 */
+    transition: background-color 0.3s, transform 0.3s; /* 平滑过渡效果 */
+}
+
+#backToTopButton:hover {
+    background-color: #0056b3; /* 鼠标悬停时的颜色 */
+    transform: translateY(-2px); /* 点击时轻微上移 */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+}
+
+/* 使用Flexbox */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.flex-item {
+    flex: 1 1 200px;
+    margin: 10px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 设置文档字符编码为UTF-8 -->
+    <meta charset="utf-8">
+    <!-- 设置网页标题 -->
+    <title>HuaiNan-the senery</title>
+    <!-- 引入外部CSS样式表 -->
+    <link rel="stylesheet" href="./layout.css">
+    <style>
+     
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1000px; /* 最大宽度 */
+            margin: 0 auto; /* 居中对齐 */
+            border: 3px solid #cccccc;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            box-sizing: border-box;
+            border-bottom: 2px solid #cccccc;
+        }
+
+        .image {
+            width: 180px;
+            height: 150px;
+            object-fit: cover; /* 保持图片比例 */
+        }
+
+        .text {
+            font-family: "SimSun";
+            font-size: 16px;
+            line-height: 25px;
+            letter-spacing: 2px;
+            margin-left: 20px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            max-height: 460px; /* 最大高度 */
+            object-fit: cover; /* 保持图片比例 */
+        }
+
+        /* 平板设备 */
+        @media (max-width: 768px) {
+            .image {
+                width: 100%;
+                height: auto;
+            }
+
+            .text {
+                font-size: 14px;
+                line-height: 22px;
+                margin-left: 10px;
+            }
+        }
+
+        /* 移动设备 */
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            .item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .image {
+                width: 100%;
+                height: auto;
+            }
+
+            .text {
+                font-size: 12px;
+                line-height: 18px;
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 页面主要内容容器 -->
+    <div class="lay" style="background-color: #fafafa;">
+        <!-- 头部区域 -->
+        <div class="top">
+            <!-- 网站logo -->
+            <img src="./images/logo.png" alt="" width="160px" height="50px" style="margin-left: 20px;margin-top: 5px;">
+            <!-- 导航栏 -->
+            <div class="webnav">
+                <ul>
+                    <!-- 当前页面链接 -->
+                    <li class="licur"><a href="index.html" title="网站首页">Homepage</a></li>
+                    <!-- 景点列表链接 -->
+                    <li><a href="hnws.html" title="淮南五色">Five color of HuaiNan</a></li>
+                    <!-- 景点小吃链接 -->
+                    <li><a href="jdxc.html" title="特色美食">signature dishes</a></li>
+                    <!-- 旅游攻略链接 -->
+                    <li><a href="lygl.html" title="旅游攻略">Travel guide</a></li>
+                </ul>
+            </div>
+            <!-- 清除浮动 -->
+            <div style="clear:both"></div>
+        </div>
+        <!-- 横幅广告或图片区域 -->
+        <div class="banner">
+            <img src="./images/b2.jpg" />
+        </div>
+        <!-- 主要内容区域 -->
+        <div class="container">
+            <!-- 第一个景点介绍 -->
+            <div class="item">
+                <img class="image" src="./images/carbon.jpg" alt="Image 1">
+                <div class="text">Black, which means coal.Huainan boasts one of the largest coal reserves in China, with deposits that are not only vast but also high in quality. The coal here is characterized by its low ash and sulfur content, making it highly sought after for both domestic use and export. The city's coalfields stretch over a wide area, providing a reliable source of energy that has fueled industrial growth and economic development for decades.</div>
+            </div>
+            <!-- 第二个景点介绍 -->
+            <div class="item">
+                <img class="image" src="./images/tofu.jpg" alt="Image 1">
+                <div class="text">White,which means tofu.Huainan is the birthplace of delicious tofu. As for the origin of tofu, there is also a quite mythological story: "一人得道，鸡犬升天" It is said that Huainan King Liu An was very obsessed with the alchemy of immortality, in a process of refining accidentally refined tofu this "unilateral", in Huai Nan Wang Liu An after eating it flew to become immortal, some poultry after eating, also have the ability to live forever.</div>
+            </div>
+            <!-- 第三个景点介绍 -->
+            <div class="item">
+                <img class="image" src="./images/power.jpg" alt="Image 1">
+                <div class="text">Red, for thermal power generation.With the development of the coal industry, Huainan's thermal power generation is also not outdone, in its territory there are Tianjian, Luohe, Pingwei, Fengtai, Tianji five main thermal power plants, and Huainan's newly mounted thermal power units total capacity has reached 10 million kilowatts, a total of 46 billion kilowatt-hours of power generation, accounting for more than 85% of the total installed capacity of "Anhui power east transmission". It is a well-deserved "leading force" of "Anhui electric power to the east" and can be called "fire Three Gorges".</div>
+            </div>
+            <!-- 第四个景点介绍 -->
+            <div class="item">
+                <img class="image" src="./images/huainanchong.jpg" alt="Image 1">
+                <div class="text">Blue,Representing the origin of life.Bagong Mountain Scenic spot in Huainan many local people called geopark, here not only has a rare stone forest landscape in northern Anhui, Huainan insect fossil site discovery is internationally renowned, Bagong Mountain is also known as the origin of life on the blue planet</div>
+            </div>
+            <!-- 第五个景点介绍 -->
+            <div class="item">
+                <img class="image" src="./images/m10.jpg" alt="Image 1">
+                <div class="text">Green,representing an ecologically sound place to live.The lake and the mountains reflect each other, and the mountain, the water and the city are integrated into a unique urban style. </div>
+            </div>
+        </div>
+    </div>
+    <script src="./highlight.js"></script>
+    <script src="./backToTopButton.js"></script>
+</body>
+</html>
